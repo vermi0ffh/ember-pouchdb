@@ -192,7 +192,7 @@ define("ember-pouchdb/storage",
               }
             });
           };
-          new Pouch(name, options, _createDB);
+          new PouchDB(name, options, _createDB);
         };
 
         return this._newPromise(createDB);
